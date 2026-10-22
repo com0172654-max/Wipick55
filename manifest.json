@@ -1,0 +1,9 @@
+{
+  "name": "WePink Revendedora",
+  "short_name": "WePink",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fffafd",
+  "theme_color": "#ec4899",
+  "icons": []
+}

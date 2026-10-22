@@ -1,0 +1,12 @@
+{
+  "name": "revendedora-pink-admin",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "db:migrate": "wrangler d1 migrations apply revendedora-pink-db --remote"
+  },
+  "devDependencies": {
+    "wrangler": "^4.30.0"
+  }
+}
